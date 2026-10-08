@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css1.css">
+    <style>
+        .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+    gap: 20px; /* Espacio entre los div */
+}
+
+.container > div {
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+    </style>
 </head>
 <body>
-<h1>Competiciones de remo</h1>
-<nav>
-<h2 class="tit1">Ver competiciones y resultados</h2>
+<h1>Trabajos realizados </h1>
+    <p>Trabajos realizados en la asignatura de Lenguaje de Marcas en la UD1. Estos trabajos son códigos en HTML y CSS.</p>
 
-    <a class="uno" href="/LM-DIGI/competiciones/ver_competiciones.html">Ver competiciones</a><br>
-    <a class="dos" href="/LM-DIGI/competiciones/ver_resultados.html">Ver resultados</a><br>
-    <h2 class="tit2">Insertar competiciones y resultados:</h2>
-    <a class="tres" href="/LM-DIGI/crear/nueva_competicion.html">Nueva competicion</a><br>
-    <a class="cuatro" href="/LM-DIGI/crear/nuevo_resultado.html" >Nuevo resultado</a>
-</nav>
+<div class="container">
+    <div>
+        <h3>Introducción a CSS</h3>
+        <ul>
+            <li><a href="/LM-DIGI/CSS1/Css1.html">Primer ejeccion CSS</a></li>
+            <li><a href="/LM-DIGI/CSS1/Ejertortilla.html">Ejercicio de Tortilla de patatas CSS</a></li>
+            <li><a href="/LM-DIGI/CSS1/Veterinaria.html">Ejercicio de Tortilla de Veterinaria CSS</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Introducción a GRID-CSS</h3>
+        <ul>
+            <li><a href="/LM-DIGI/GRID/grid1.html">Primer ejeccio GRID</a></li>
+            <li><a href="/LM-DIGI/GRID/grid2.html">Segundo Ejercicio GRID</a></li>
+            
+        </ul>
+    </div>
+</div>
+    
 
 </body>
 </html>
