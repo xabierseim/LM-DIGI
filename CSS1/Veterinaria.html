@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr 80px;
+            gap: 10px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / 3;
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        nav {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background-color: lightblue;
+        }
+
+        main {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-color: beige;
+            padding: 10px;
+        }
+
+        footer {
+            grid-column: 1 / 3;
+            background-color: lightgray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="contenedor">
+    <header>
+        <h1>Veterinaria Patitas Felices</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Equipo</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Bienvenidos</h2>
+        <p>Cuidamos la salud y el bienestar de tus mascotas.</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Veterinaria Patitas Felices</p>
+    </footer>
+    </div>
+
+</body>
+</html>
+

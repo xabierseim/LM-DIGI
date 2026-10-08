@@ -1,0 +1,138 @@
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio: Página de Receta</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin:0px;
+            padding: 40px;
+        }
+        /*Color naranja oscuro (#d35400), 32px tamaño fuente,
+        texto centrado (text-align:center), margen inferior 5px.*/
+        h1 {
+            color:#d35400;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        /*
+Color naranja claro (#e67e22), 20px tamaño de fuente,
+cursiva (font-style: italic),
+       texto centrado, sin margen arriba, 30px abajo.*/
+h2 {
+   color: #e67e22;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 30px;
+}hr {
+    width: 600px;
+    background-color: #d35400;
+    height: 3px;
+}
+/*16px tamaño de fuente, altura de línea 1.6  (line-height: 1.6;
+), color de txto gris oscuro, ancho 600px, texto centrado,
+margen inferior 20px, márgenes izq y der auto texto justificado.
+*/
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: darkgray;
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+/*Fondo color crema (#fef5e7), borde naranja de 2px, 20px padding,
+ancho 560px, texto centrado con margen inferior 30px.*/
+.ingredientes {
+    background-color: #fef5e7;
+    /*border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;*/
+    border: 2px solid orange;
+    padding: 20px;
+    width: 560px;
+    text-align: center;
+    margin-bottom: 30px;
+   }
+.ingredientes-title {
+    color: darkorange;
+    margin-bottom: 10px;
+}
+        /*Cursiva, color gris claro, texto centrado.*/
+.nota {
+    font-style: italic;
+    color: lightgray;
+    text-align: center;
+    }
+
+/*Color azul, sin subrayado, negrita.*/
+        .enlace {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Al pasar el ratón, subrayar texto.*/
+        .enlace:hover {
+            text-decoration: underline;
+        }
+        /*Texto Centrado, 14px tamaño fuente, color gris  claro,
+        margen superior 40px.*/
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: lightgray;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tortilla de Patatas Clásica</h1>
+<h2>Receta tradicional española</h2>
+
+<hr>
+
+<p>
+    La tortilla de patatas es uno de los platos más emblemáticos de la gastronomía española.
+    <b>Sus ingredientes son muy sencillos</b>: patatas, huevos, aceite de oliva y sal.
+    A pesar de su simplicidad, el secreto está en la técnica y en la calidad de los productos.
+</p>
+
+<p class="ingredientes">
+    <span class="ingredientes-title">Ingredientes necesarios:</span><br>
+    - 4 patatas medianas<br>
+    - 6 huevos<br>
+    - Aceite de oliva virgen extra<br>
+    - Sal al gusto
+</p>
+
+<p>
+    Para comenzar, pela y corta las patatas en láminas finas. Caliéntalas en una sartén con abundante aceite
+    a fuego medio-bajo durante unos 20 minutos. <i>Este proceso se llama "confitar" las patatas</i>
+    y es fundamental para que queden tiernas.
+</p>
+
+<p>
+    Bate los huevos en un bol grande y añade las patatas escurridas. Deja reposar la mezcla unos minutos
+    para que los huevos se impregnen bien. Cuaja la tortilla en la sartén vuelta y vuelta hasta lograr
+    el punto deseado. Puedes ver más trucos en este
+    <a href="#" class="enlace">enlace de cocina</a>.
+</p>
+
+<p class="nota">
+    Nota: El debate sobre si debe llevar cebolla o no está abierto. ¡Elige tu versión favorita!
+</p>
+
+<p class="footer">
+    S.E.I.M. | 2026
+</p>
+
+</body>
+</html>
