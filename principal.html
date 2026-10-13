@@ -7,8 +7,14 @@
       .container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+          grid-template-rows: 120px auto 80px;
     gap: 20px; /* Espacio entre los div */
-}
+
+          }
+     header {
+         grid-row:1;
+         grid-column:1/3;
+     }
 
 .container > div {
     border: 1px solid black;
@@ -30,10 +36,12 @@ list-style:none;
     </style>
 </head>
 <body>
-<h1>Trabajos realizados </h1>
-    <p>Trabajos realizados en la asignatura de Lenguaje de Marcas en la UD1. Estos trabajos son códigos en HTML y CSS.</p>
 
 <div class="container">
+    <header>
+    <h1>Trabajos realizados </h1>
+    <p>Trabajos realizados en la asignatura de Lenguaje de Marcas en la UD1. Estos trabajos son códigos en HTML y CSS.</p>
+</header>
     <div>
         <h3>Introducción a CSS</h3>
         <ul>
