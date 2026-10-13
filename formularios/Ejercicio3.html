@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio3</title>
+  <style>
+     td {
+       border: 1px solid black;
+         }
+  </style>
+</head>
+<body>
+<h1>Formulario de Notas</h1>
+<form action="guardar.html" method="get">
+  <label for="nom">Nombre</label><input type="text" name="tnombre" id = "nom"><br>
+  <label for="ape">Apellido</label><input type="text" name="tapellido" id = "ape"><br>
+  <label for="fech">Fecha:</label><input type="date" id="fech" name="tfeha" min="2023-09-01" max="2024-06-05"><br>
+<table>
+  <thead>
+  <tr>
+    <th>Asignatura</th>
+    <th>Nota</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+    <!--1-->
+    <td>
+    <select name="tasignatura1">
+      <option value="1">Lenguaje de Marcas</option>
+      <option value="2">Programación</option>
+      <option value="3">Bases de Datos</option>
+    </select>
+  </td><td>
+    <input type="number" name="tnota1">
+  </td>
+  </tr>
+  <tr>
+    <!--2-->
+    <td><select name="tasignatura2">
+      <option value="1">Lenguaje de Marcas</option>
+      <option value="2">Programación</option>
+      <option value="3">Bases de Datos</option>
+    </select></td>
+    <td><input type="number" name="tnota2"></td>
+  </tr>
+  <tr>
+    <!--3-->
+    <td><select name="tasignatura3">
+      <option value="1">Lenguaje de Marcas</option>
+      <option value="2">Programación</option>
+      <option value="3">Bases de Datos</option>
+    </select></td>
+    <td><input type="number" name="tnota3"></td>
+  </tr>
+  <td colspan="2"><label id="med">Media</label><input type="number" name="tmedia"> </td>
+  <!--4-->
+  <tr>
+  </tr>
+  </tbody>
+</table>
+  <input type="submit" value="Guardar">
+</form>
+
+</body>
+</html>
